@@ -30,21 +30,21 @@
                 <div class="container-fluid">
                     <div class="row " style="padding: 0px 12px;">
                         <div class=" col-12 alert alert-danger mt-3 m-l3 -r-3" role="alert">
-                            Some fields are missing
+                            <strong>Some fields are missing </strong>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class=" col-6">
-                            <label for="cardNumber" class="">Card</label>
+                    <div class="row mt-2">
+                        <div class="  col-sm-12 col-md-6 col-lg-6">
+                            <label for="cardNumber" class="my-2 ">Card #</label>
                             <input type="text" class="form-control " id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
                         </div>
-                        <div class="col-3">
-                            <label for="cvcNumber">CVC#</label>
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <label for="cvcNumber" class="my-2">CVC #</label>
                             <input type="text" class="form-control " id="cvcNumber" placeholder="0000">
                         </div>
-                        <div class="col-3 ">
+                        <div class="col-sm-12 col-md-3 col-lg-3">
 
-                            <label">Amount</label>
+                            <label class="my-2">Amount</label>
                                 <div class="input-group">
                                     <div class="input-group-text rounded-start" id="basic-addon1">$</div>
                                     <!--style=" border-radius: 5px 0px 0px 5px"-->
@@ -54,55 +54,59 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row mt-3">
+                        <div class=" col-sm-12 col-md-6 col-lg-6">
 
-                            <label for="firstName">First Name</label>
+                            <label for="firstName" class="my-2">First Name</label>
                             <input type="text" class="form-control pt-3" id="firstName">
 
                         </div>
-                        <div class="col-6">
-                            <label for="lastName">Last Name </label>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="lastName" class="my-2">Last Name </label>
                             <input type="text" class="form-control pt-3" id="lastName">
 
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="city">City</label>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="city" class="my-2">City</label>
                             <input type="text" class="form-control" id="city">
                         </div>
 
-                        <div class="col-4">
-                            <label for="state">State</label>
-                            <select id="state" class="form-control">
-                                <option selected>Selecciona un estado</option>
-                                <option>North Carolina</option>
-                                <option>Washington</option>
-                                <option>New Jersey</option>
-                                <option>California</option>
-                                <option>New York</option>
-                                <option>Texas</option>
-                                <option>Florida</option>
+
+
+                       
+
+                        <div class=" col-sm-12 col-md-3 col-lg-3">
+                            <label for="state" class="my-2">State</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Pick a state</option>
+                                <option value="1">North Carolina</option>
+                                <option value="2">Washington</option>
+                                <option value="3">New Jersey</option>
+                                <option value="4">California</option>
+                                <option value="5">New York</option>
+                                <option value="6">Texas</option>
+                                <option value="7">Florida</option>
                             </select>
 
 
                         </div>
 
-                        <div class="col-4">
-                            <label for="postalCode">Postal Code</label>
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <label for="postalCode" class="my-2"><strong>Postal Code </strong></label>
                             <input type="text" class="form-control" id="postalCode">
 
                         </div>
                     </div>
 
-                    <div class="row mt-3 d-flex justify-content-between ">
+                    <div class="row mt-3 d-flex justify-content-between  ">
 
-                        <div class="col-3">
-                            <h6>We accept:</h6>
+                        <div class="col-sm-12 col-md-3 col-lg-6 mt-3">
+                            <h6 ><strong>We accept: </strong></h6>
 
-                            <div class="bg-secondary rounded  d-inline-flex p-2">
+                            <div class="bg-secondary rounded  d-inline-flex p-2 my-2">
                                 <div class="form-check form-check-inline d-flex align-items-center gap-1">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                         id="inlineRadio1" value="option1">
@@ -138,8 +142,8 @@
 
                         </div>
 
-                        <div class="col-6">
-                            <label for="message">Message</label>
+                        <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+                            <label for="message" class="mb-2">Message</label>
 
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
@@ -162,7 +166,7 @@
 
 
             <div class=" card-footer text-body-secondary d-flex justify-content-end">
-                <button class="btn btn-secondary mr-2 ">Cancel</button>
+                <button class="btn btn-secondary mx-2  ">Cancel</button>
                 <button class="btn btn-primary">Send</button>
             </div>
 
