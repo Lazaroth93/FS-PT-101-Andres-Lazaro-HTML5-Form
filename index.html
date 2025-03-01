@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tittle de la pestaña del navegador -->
     <title>Formulario de Pago con Bootstrap</title>
 
+    <!--Link para uso de iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--Link para uso de componentes Boostrap version 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -20,66 +24,78 @@
 
 
 
-
+    <!--Div principal del card -->
     <div class="card m-3">
+
+        <!--Div Formulario  -->
         <div class="form">
             <div class="card-header">
-                <h3>Payment form example</h3>
+                <h3>Payment form example</h3> <!--Titulo del formulario  -->
             </div>
+
+            <!--Card Body que engloba todos los Input del Form  -->
             <div class="card-body">
+
                 <div class="container-fluid">
+                    <!--Container fluid para que el contenido ocupe el 100% de su elemento padre  -->
                     <div class="row " style="padding: 0px 12px;">
                         <div class=" col-12 alert alert-danger mt-3 m-l3 -r-3" role="alert">
-                            <strong>Some fields are missing </strong>
+                            <strong>Some fields are missing </strong> <!--Mensaje de alerta  -->
                         </div>
                     </div>
-                    <div class="row mt-2">
+                    <!--El formulario se divide een rows que asimismo se dividen en col para los distintos inputs  -->
+
+
+                    <div class="row mt-2"> <!--Etiqueta de apertura primer row-->
                         <div class="  col-sm-12 col-md-6 col-lg-6">
-                            <label for="cardNumber" class="my-2 ">Card #</label>
+                            <!--Input de tipo text para ingresar el numero de tarjeta de crédito -->
+                            <label for="cardNumber" class="my-2 fw-bold ">Card #</label> 
                             <input type="text" class="form-control " id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <label for="cvcNumber" class="my-2">CVC #</label>
+                            <!--Input de tipo text para ingresar el numero CVC de tarjeta de crédito -->
+                            <label for="cvcNumber" class="my-2 fw-bold">CVC #</label> 
                             <input type="text" class="form-control " id="cvcNumber" placeholder="0000">
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
 
-                            <label class="my-2">Amount</label>
-                                <div class="input-group">
-                                    <div class="input-group-text rounded-start" id="basic-addon1">$</div>
-                                    <!--style=" border-radius: 5px 0px 0px 5px"-->
-                                    <input type="text" class="form-control" placeholder="Amount"
-                                        aria-describedby="basic-addon1">
+                            <label class="my-2 fw-bold">Amount</label> <!--Input de tipo text para ingresar la cantidad en $ -->
+                            <div class="input-group">
+                                <div class="input-group-text rounded-start" id="basic-addon1">$</div>
+                                <!--style=" border-radius: 5px 0px 0px 5px"-->
+                                <input type="text" class="form-control" placeholder="Amount"
+                                    aria-describedby="basic-addon1">
 
-                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class=" col-sm-12 col-md-6 col-lg-6">
+                    </div> <!--Etiqueta de cierre del primer row-->
 
-                            <label for="firstName" class="my-2">First Name</label>
+
+                    <div class="row mt-3"> <!--Etiqueta de apertura segundo row-->
+                        <div class=" col-sm-12 col-md-6 col-lg-6">
+                             <!--Input de tipo text para ingresar el nombre del titular de la tarjeta  -->
+                            <label for="firstName" class="my-2 fw-bold">First Name</label>
                             <input type="text" class="form-control pt-3" id="firstName">
 
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-sm-12 col-md-6 col-lg-6 fw-bold">
+                             <!--Input de tipo text para ingresar los apellidos del titular de la tarjeta  -->
                             <label for="lastName" class="my-2">Last Name </label>
                             <input type="text" class="form-control pt-3" id="lastName">
 
                         </div>
-                    </div>
+                    </div> <!--Etiqueta de cierre del segundo row-->
 
-                    <div class="row mt-3">
+                    <div class="row mt-3"> <!--Etiqueta de apertura tercer row-->
                         <div class="col-sm-12 col-md-6 col-lg-6">
-                            <label for="city" class="my-2">City</label>
+                             <!--Input de tipo text para ingresar la Ciudad   -->
+                            <label for="city" class="my-2 fw-bold">City</label>
                             <input type="text" class="form-control" id="city">
                         </div>
 
-
-
-                       
-
+                        <!--Input de tipo select para elegir el state por defecto tiene el mensaje Pick a State   -->
                         <div class=" col-sm-12 col-md-3 col-lg-3">
-                            <label for="state" class="my-2">State</label>
+                            <label for="state" class="my-2 fw-bold">State</label>
                             <select class="form-select" id="inputGroupSelect01">
                                 <option selected>Pick a state</option>
                                 <option value="1">North Carolina</option>
@@ -93,18 +109,19 @@
 
 
                         </div>
-
+                        <!--Input de tipo text para ingresar el codigo postal   -->
                         <div class="col-sm-12 col-md-3 col-lg-3">
                             <label for="postalCode" class="my-2"><strong>Postal Code </strong></label>
                             <input type="text" class="form-control" id="postalCode">
 
                         </div>
-                    </div>
+                    </div> <!--Etiqueta de cierre del tercer row-->
 
-                    <div class="row mt-3 d-flex justify-content-between  ">
+                    <div class="row mt-3 d-flex justify-content-between  "> <!--Etiqueta de apertura cuarto row-->
 
+                        <!--Input de tipo radio para seleccionr el tipo de Tarjeta con la que el usuario va a realizarr el pago   -->
                         <div class="col-sm-12 col-md-3 col-lg-6 mt-3">
-                            <h6 ><strong>We accept: </strong></h6>
+                            <h6><strong>We accept: </strong></h6>
 
                             <div class="bg-secondary rounded  d-inline-flex p-2 my-2">
                                 <div class="form-check form-check-inline d-flex align-items-center gap-1">
@@ -141,46 +158,35 @@
 
 
                         </div>
-
+                        <!--Input de tipo Text area donde el usuario puede añadir las notas que crea recurrentes    -->
                         <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
-                            <label for="message" class="mb-2">Message</label>
+                            <label for="message" class="mb-2 fw-bold">Message</label>
 
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
-                            <small class="form-text text-muted">Add any notes here</small>
+                            <small class="form-text text-muted">Add any notes here.</small>
                         </div>
-                    </div>
-
-
-
-
-
-
-
+                    </div> <!--Etiqueta de cierre del cuarto row-->
 
                 </div>
 
-
-
             </div class=" row">
 
-
+            <!--Input de tipo button para expedir o cancelar el  envio del formulario    -->
             <div class=" card-footer text-body-secondary d-flex justify-content-end">
                 <button class="btn btn-secondary mx-2  ">Cancel</button>
                 <button class="btn btn-primary">Send</button>
             </div>
 
-
-
-
-
         </div>
     </div>
     </div>
+
+    <!--Componente para la funcionalidad de elementos Boostrap version 5.3.3   -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-</body>
+    </body>
 
 </html>
